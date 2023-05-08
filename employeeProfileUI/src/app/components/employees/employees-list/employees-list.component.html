@@ -1,0 +1,15 @@
+<h2 class="px-3">Employee List</h2>
+<div class="m-3">
+  <div class="row" text="card-row" *ngFor="let employee of employees">
+    <div class="card" text="card">
+      <img src="../../../../assets/images/male_default.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ employee.name}}</h5>
+        <!-- <h6>{{employee.email}}</h6>
+        <h6>{{employee.phone}}</h6> -->
+        <h6>{{employee.department}}</h6>
+        <a [routerLink]="['employee-details']" class="btn btn-primary" (click)="gotoDetails(employee)" >More Detail</a>
+      </div>
+    </div>
+  </div>
+</div>

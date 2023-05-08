@@ -1,0 +1,10 @@
+div[text=card-row] {
+  width: 100%;
+  display: block;
+}
+
+div[text=card] {
+  width: 30%;
+  float: left;
+  margin: 10px 1%
+}

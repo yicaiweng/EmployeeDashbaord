@@ -1,0 +1,24 @@
+<h2 class="px-3">Employee Details</h2>
+<div style="width: 50%; margin: auto">
+  <div class="row" text="card-row">
+    <div class="card" text="card">
+      <img src="../../../../assets/images/male_default.png" class="card-img-top" alt="employee profile" width="100px" height="250px">
+      <div class="card-body">
+        <h5 class="card-title">{{ employeeDetails.name}}</h5>
+        <h6>{{employeeDetails.department}}</h6>
+        <div class="row">
+          <span style="width: 50%;">
+            <h4 class="mt-4">Contact Info</h4>
+            <h6>Email: {{employeeDetails.email}}</h6>
+            <h6>Phone: {{employeeDetails.phone}}</h6>
+          </span>
+          <span style="width: 50%;">
+            <h4 class="mt-4">Employee Info</h4>
+            <h6>Employee Id: {{employeeDetails.id}}</h6>
+            <h6>Salary: ${{employeeDetails.salary}}</h6>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

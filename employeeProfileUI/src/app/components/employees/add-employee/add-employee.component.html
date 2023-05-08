@@ -1,0 +1,61 @@
+<div class="card col-8 m-auto">
+  <div class="card-header">
+    Add New Employee
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)='onSubmit()' [formGroup]="newEmployeeForm">
+      <!-- <div class="form-group col-12">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" #empName="ngModel" ngModel name="Name" required minlength="5">
+        <span *ngIf="!empName.valid && empName.touched" class="error-block">
+          <span *ngIf="empName.errors?.['required']">Please enter full employee name</span>
+          <span *ngIf="empName.errors?.['minlength']">Employee name must be 5 chara long</span>
+        </span>
+      </div>
+      template driven form -->
+
+      <div class="form-group col-12">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" formControlName="name">
+        <span  class="error-block" *ngIf="!name.valid && name.touched">
+          Please enter full employee name
+          <span *ngIf="">Employee name must be 5 chara long</span>
+        </span>
+      </div>
+      <div class="form-group col-12">
+        <label for="name">Email</label>
+        <input type="text" class="form-control" name="Email" formControlName="email">
+        <span  class="error-block" *ngIf="!email.valid && email.touched">
+          <span *ngIf="email.hasError('required')"> Please enter email address</span>
+          <span *ngIf="email.hasError('email')"> Please enter an valid email</span>
+        </span>
+      </div>
+      <div class="form-group col-12">
+        <label for="name">Phone</label>
+        <input type="text" class="form-control" name="Phone" formControlName="phone" maxlength="10">
+        <span  class="error-block" *ngIf="!phone.valid && phone.touched">
+          <span *ngIf="phone.hasError('required')"> Please enter phone number</span>
+          <span *ngIf="phone.hasError('minlength')"> Please enter an valid phone number</span>
+        </span>
+      </div>
+      <div class="form-group col-12">
+        <label for="name">Salary</label>
+        <input type="text" class="form-control" name="Salary" formControlName="salary">
+      </div>
+      <div class="form-group col-12">
+        <label for="name">Department</label>
+        <input type="text" class="form-control" name="Department" formControlName="department">
+        <span  class="error-block" *ngIf="!department.valid && department.touched">
+          <span *ngIf="department.hasError('required')"> Please enter employee department</span>
+          <span *ngIf="department.hasError('minlength')"> Please enter at least 2 char</span>
+        </span>
+      </div>
+      <div class="form-group col-12 mt-3">
+        <button type="reset" class="btn btn-danger mx-1">Cancel</button>
+        <button type="submit" class="btn btn-success ml-2" [disabled]="!newEmployeeForm.valid">Save</button>
+        </div>
+    </form>
+    <!-- form values: {{newEmployeeForm.value | json}},
+    form status: {{newEmployeeForm.valid | json}}, -->
+  </div>
+</div>
