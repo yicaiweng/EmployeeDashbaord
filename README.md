@@ -1,4 +1,6 @@
 # EmployeeDashbaord
+this full stack web application is using Angular 16 with ASP.NET Core 7.0
+
 <img width="1198" alt="Screen Shot 2023-05-08 at 9 08 04 AM" src="https://user-images.githubusercontent.com/13059369/236850401-19586449-c893-4134-b15a-163ac8a3177e.png">
 <img width="1199" alt="Screen Shot 2023-05-08 at 9 08 16 AM" src="https://user-images.githubusercontent.com/13059369/236850406-3cd12070-4af4-409d-bc96-7483c373cb3a.png">
 <img width="1198" alt="Screen Shot 2023-05-08 at 9 08 25 AM" src="https://user-images.githubusercontent.com/13059369/236850411-1ea3ae2b-af3c-49a7-b29d-c102e4d9a5a9.png">
