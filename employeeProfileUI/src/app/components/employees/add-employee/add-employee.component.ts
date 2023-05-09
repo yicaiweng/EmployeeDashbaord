@@ -43,7 +43,10 @@ export class AddEmployeeComponent implements OnInit {
     if(this.newEmployeeForm.valid) {
       this.newEmployee = Object.assign(this.newEmployee, this.newEmployeeForm.value);
       this.employeeService.addEmployee(this.newEmployee);
-      this.employeeService.addEmployeestoDB(this.newEmployee);
+      this.employeeService.addEmployeestoDB(this.newEmployee)
+        .subscribe({ next: (employee) =>
+            console.log(employee)
+          });
       this.newEmployeeForm.reset();
     }
   }
@@ -57,5 +60,4 @@ export class AddEmployeeComponent implements OnInit {
       department: [null, Validators.minLength(2)]
     })
   }
-
 }

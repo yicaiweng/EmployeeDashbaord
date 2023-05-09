@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard/webAPI/webAPI.csproj": {}
+    "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard2/webAPI/webAPI.csproj": {}
   },
   "projects": {
-    "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard/webAPI/webAPI.csproj": {
+    "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard2/webAPI/webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard/webAPI/webAPI.csproj",
+        "projectUniqueName": "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard2/webAPI/webAPI.csproj",
         "projectName": "webAPI",
-        "projectPath": "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard/webAPI/webAPI.csproj",
+        "projectPath": "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard2/webAPI/webAPI.csproj",
         "packagesPath": "/Users/yicaiweng/.nuget/packages/",
-        "outputPath": "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard/webAPI/obj/",
+        "outputPath": "/Users/yicaiweng/Desktop/dev/netCore/EmployeeDashboard2/webAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yicaiweng/.nuget/NuGet/NuGet.Config"

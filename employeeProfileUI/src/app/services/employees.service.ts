@@ -7,6 +7,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EmployeesService {
+  addEmployeeReq: IEmployee = {
+    id: '',
+    name: '',
+    email: '',
+    phone: 0,
+    salary: 0,
+    department: ''
+  };
 
 constructor(private http: HttpClient) { }
 
